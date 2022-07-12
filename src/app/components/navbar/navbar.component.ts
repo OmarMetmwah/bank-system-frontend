@@ -20,6 +20,9 @@ export class NavbarComponent implements OnInit {
           this.sidebarVisible = false;
           if(localStorage.getItem('notifications')){
             this.notifications =JSON.parse(localStorage.getItem("notifications"));
+        }else{
+            localStorage.setItem("notifications",'[]');
+            this.notifications =JSON.parse(localStorage.getItem("notifications"));
         }
     }
 
