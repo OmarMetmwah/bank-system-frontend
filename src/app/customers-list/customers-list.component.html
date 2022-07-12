@@ -1,0 +1,57 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger">
+                      <h4 class="card-title ">Customers Info Table</h4>
+                      <p class="card-category">To learn more about specific customer transactions' history click on its field.</p>
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="table">
+                              <thead class=" text-primary">
+                                  <th>
+                                      ID
+                                  </th>
+                                  <th>
+                                      Name
+                                  </th>
+                                  <th>
+                                      Email
+                                  </th>
+                                  <th>
+                                      Last Transaction
+                                  </th>
+                                  <th>
+                                      Current Balance
+                                  </th>
+                              </thead>
+
+                              <tbody>
+                                <tr routerLinkActive="active" *ngFor="let menuItem of menuItems;let i=index;"  [routerLink]="[path]" (click)="setUser(menuItem.name)">
+                                    <td>
+                                        {{i+1}}
+                                    </td>
+                                    <td>
+                                        {{menuItem.name}}
+                                    </td>
+                                    <td>
+                                        {{menuItem.email}}
+                                    </td>
+                                    <td>
+                                        {{menuItem.lasttransaction.substring(0, 10)+" "+menuItem.lasttransaction.substring(11, 19)}}
+                                    </td>
+                                    <td>
+                                        {{menuItem.currentbalance}}$
+                                    </td>
+                                </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
