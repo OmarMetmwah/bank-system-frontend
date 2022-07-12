@@ -40,7 +40,13 @@
                                         {{menuItem.email}}
                                     </td>
                                     <td>
-                                        {{(((menuItem.lasttransaction)?menuItem.lasttransaction.substring(0, 10):"")+" "+((menuItem.lasttransaction):menuItem.lasttransaction.substring(11, 19)?"")}}
+                                        {{
+                                            (  (menuItem.lasttransaction) ?menuItem.lasttransaction.substring(0, 10):""  )
+                                            +
+                                            " "
+                                            +
+                                            (  (menuItem.lasttransaction)?menuItem.lasttransaction.substring(11, 19):""  )
+                                        }}
                                     </td>
                                     <td>
                                         {{menuItem.currentbalance}}$
