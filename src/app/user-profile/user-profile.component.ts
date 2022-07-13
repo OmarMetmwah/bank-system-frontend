@@ -21,7 +21,6 @@ export class UserProfileComponent implements OnInit {
 
   ngOnInit() {
     this.api.get(`customers/${localStorage.getItem('user')}`).subscribe((res)=>{
-      console.log(res)
       Transactions = (res as any).data;
       this.menuItems = Transactions.filter(menuItem => menuItem);
     })

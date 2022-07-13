@@ -55,14 +55,14 @@
               <div class="card card-profile">
                   <div class="card-avatar">
                       <a href="javascript:void(0)">
-                          <img class="img" src="{{'./assets/img/faces/'+name+'.jpg'}}" />
+                          <img class="img" src="{{'./assets/img/faces/'+name+'.jpg'}}" onerror='this.onerror = null; this.src="./assets/img/user.png"'/>
                       </a>
                   </div>
                   <div class="card-body">
                       <h6 class="card-category text-gray">Mr.</h6>
                       <h4 class="card-title">{{name.toUpperCase()}}</h4>
                       <p class="card-description">
-                          Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam qui obcaecati facere voluptate ab. Fugit nobis eius obcaecati consequatur sit, optio et exercitationem soluta. Vitae illum laborum amet ipsam porro...
                       </p>
                       <a (click)="exportTableToExcel('tblData',name+'-Transactions')" class="btn btn-danger btn-round">Export Report</a>
                   </div>

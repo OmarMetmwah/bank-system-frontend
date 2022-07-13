@@ -8,7 +8,6 @@ import { UserProfileComponent } from '../../user-profile/user-profile.component'
 import { CustomersListComponent } from '../../customers-list/customers-list.component';
 import { MakeTransactionComponent } from '../../make-transaction/make-transaction.component';
 import { TransactionsListComponent } from '../../transactions-list/transactions-list.component';
-import { DonationComponent } from '../../donation/donation.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatRippleModule} from '@angular/material/core';
@@ -37,7 +36,6 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
     CustomersListComponent,
     MakeTransactionComponent,
     TransactionsListComponent,
-    DonationComponent,
   ]
 })
 
